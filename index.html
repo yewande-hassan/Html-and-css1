@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <style>
+    .container{
+      width:100%;
+      height: 100vh;
+    }
+    header{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 2rem;
+      height: 20vh;
+    }
+    .header-content{
+      display: flex;
+      flex-direction: column;
+    }
+    .header-content h1{
+      color: #333;
+      text-align: left;
+      width:30%;
+    }
+    h2{
+      color: rgb(62, 62, 138);
+    }
+    h4{
+      color: #fff;
+      padding: 2px 5px;
+    }
+    h5{
+      text-align: center;
+      color: rgb(62, 62, 138);
+    }
+    .thick-line{
+      border: 1px solid rgb(62, 62, 138);
+      height: 5px;
+      background-color: rgb(62, 62, 138);
+    }
+    .row{
+      width:100%;
+      height:10vh;
+      display: flex;
+      flex-direction: column;
+      margin: 5rem 0;
+     
+    }
+    .title{
+      background-color: rgb(62, 62, 138);
+      border: 1px solid rgb(62, 62, 138);
+      width: 25%;
+      margin: 1rem 0; 
+      
+    }
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 1rem;
+    }
+    .dotted{
+      border: 1px dashed rgb(62, 62, 138);
+      margin: 0 3rem;
+      margin-bottom: 1rem;
+    }
+    .card{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+    }
+    .demacation{
+      align-content: center;
+      width: 70%;
+    }
+    .demacation p{
+      text-align: center;
+      margin: 1rem 2rem;
+      width:70%;
+      
+      
+    }
+    .flex{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .line{
+      border: 1px solid rgb(62, 62, 138);
+      margin: 0 2rem;
+      margin-bottom: 1rem;
+    }
+    .btn{
+      background: rgb(62, 62, 138);
+      width:15%;
+      color: #fff;
+      padding: 10px;
+      margin: auto;
+      margin-top: 1rem;
+    }
+    .text{
+    text-align: center;
+    padding: 1rem;
+    width: 33%;
+    }
+    .last-row{
+      display: flex;
+      flex-direction: row;
+    }
+    .last-row p{
+      padding: 1rem;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="./img/undraw_working_late_re_0c3y.svg" alt="The Logo">
+      </div>
+      <div class="header-content">
+        <p>YOUR WEEKLY SUMMARY FOR <b>OCTOBER,  2021</b></p>
+        <h1>PARTNER REPORT</h1>
+        <div class="thick-line"></div>
+        <p>Please see below a report on your performance for the month</p>
+      </div>
+    </header>
+    <main>
+      <div class="row">
+      <div class="title">
+        <h4>WITHDRAWALS CARD</h4>
+      </div>
+      <div class="grid">
+      <div class="card">
+        <div class="demacation">
+          <h5>100</h5>
+          <p>Total Number of Transactions for the Month</p>
+        </div>
+          <div class="dotted"></div>
+      </div>
+      <div class="card">
+        <div class="demacation">
+          <h5>N1,000,000.00</h5>
+          <p>Total Amount of Transactions for the Month</p>
+        </div>
+          <div class="dotted"></div>
+        </div>
+        <div class="card">
+          <div class="demacation">
+            <h5>N5.00</h5>
+            <p>Commission Rate</p>
+          </div>
+            <div class="dotted"></div>
+          </div>
+        
+        <div class="card">
+          <div class="demacation">
+            <h5>N5000.00</h5>
+            <p>Total Commissions Earned for the Month</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      <div class="title">
+        <h4>USSD (CARDLESS)</h4>
+      </div>
+      <div class="grid">
+      <div class="card">
+        <div class="demacation">
+          <h5>100</h5>
+          <p>Total Number of Transactions for the Month</p>
+        </div>
+          <div class="dotted"></div>
+      </div>
+      <div class="card">
+        <div class="demacation">
+          <h5>N1,000,000.00</h5>
+          <p>Total Amount of Transactions for the Month</p>
+        </div>
+          <div class="dotted"></div>
+        
+      </div>
+        <div class="card">
+          <div class="demacation">
+            <h5>N5.00</h5>
+            <p>Commission Rate</p>
+          </div>
+            <div class="dotted"></div>
+          
+        </div>
+        <div class="card">
+          <div>
+            <h5>N5000.00</h5>
+            <p>Total Commissions Earned for the Month</p>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row">
+      <div class="title">
+        <h4>TRANSFERS(CARDLESS)</h4>
+      </div>
+      <div class="grid">
+      <div class="card">
+        <div class="demacation">
+          <h5>100</h5>
+          <p>Total Number of Transactions for the Month</p>
+        </div>
+          <div class="dotted"></div>
+        
+      </div>
+      <div class="card">
+        <div class="demacation">
+          <h5>N1,000,000.00</h5>
+          <p>Total Amount of Transactions for the Month</p>
+        </div>
+          <div class="dotted"></div>
+       
+        </div>
+        <div class="card">
+          <div class="demacation">
+            <h5>N5.00</h5>
+            <p>Commission Rate</p>
+          </div>
+            <div class="dotted"></div>
+          
+        </div>
+        <div class="card">
+          <div>
+            <h5>N5000.00</h5>
+            <p>Total Commissions Earned for the Month</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="row">
+      <div class="title">
+        <h4>CARD TRANSFERS</h4>
+      </div>
+      <div class="grid">
+      <div class="card">
+        <div class="demacation">
+          <h5>100</h5>
+          <p>Total Number of Transactions for the Month</p>
+        </div>
+          <div class="dotted"></div>
+        
+      </div>
+      <div class="card">
+        <div class="demacation">
+          <h5>N1,000,000.00</h5>
+          <p>Total Amount of Transactions for the Month</p>
+        </div>
+          <div class="dotted"></div>
+       
+        </div>
+        <div class="card">
+          <div class="demacation">
+            <h5>N5.00</h5>
+            <p>Commission Rate</p>
+          </div>
+            <div class="dotted"></div>
+          
+        </div>
+        <div class="card">
+          <div>
+            <h5>N5000.00</h5>
+            <p>Total Commissions Earned for the Month</p>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+      <div  class="row">
+      <div class="title">
+        <h4>DAILY TOTAL</h4>
+      </div>
+      <div class="grid">
+      <div class="card">
+        <div class="demacation">
+          <h5>100</h5>
+          <p>Total Number of Transactions for the Month</p>
+        </div>
+          <div class="dotted"></div>
+       
+      </div>
+      <div class="card">
+        <div class="demacation">
+          <h5>N1,000,000.00</h5>
+          <p>Total Amount of Transactions for the Month</p>
+        </div>
+          <div class="dotted"></div>
+        
+        </div>
+        <div class="card">
+          <div class="demacation">
+            <h5>N5.00</h5>
+            <p>Commission Rate</p>
+          </div>
+            <div class="dotted"></div>
+          
+        </div>
+        <div class="card">
+          <div>
+            <h5>N5000.00</h5>
+            <p>Total Commissions Earned for the Month</p>
+            
+          </div>
+        </div>
+        </div>
+      </div>
+      <div  class="row">
+        <div class="title">
+          <h4>DAILY PERFORMACE</h4>
+        </div>
+        <div class="flex">
+          <div class="card">
+            <img src="./img/undraw_personalization_re_grty.svg" alt="my image1">
+            <div class="text">
+              <h2>55%</h2>
+              <p>MONTHLY POS TRANSACTIONS TARGET MET</p>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="card">
+            <img src="./img/undraw_mobile_testing_re_w7yb.svg" alt="my image2">
+            <div class="text">
+              <h2>80%</h2>
+              <p>MONTHLY TRANSFER TRANSACTIONS TARGET MET</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn">VIEW YOUR DASHBOARD</button>
+        </div>
+        <div class="last-row">
+          <div class="title">
+            <h4>CONTACT US</h4>
+          </div>
+          <p>Do not hesitate to contact us with any questions or concerns. You can reach us at xxx@xys.com or by simply replying to this email</p>
+        </div>
+    </main>
+  </div>
+</body>
+</html>
